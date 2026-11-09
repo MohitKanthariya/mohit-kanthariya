@@ -273,6 +273,8 @@ h2{font-size:clamp(32px,4.8vw,60px);line-height:1.05;letter-spacing:-.035em;font
   .scroll{display:none}
 }
 @media (max-width:760px){
+  .pill__sep,.roles{display:none}
+  .pill{font-size:13px}
   .nav__cta{display:none}.burger{display:block}
   .nav{gap:10px}
   .nav__list{position:absolute;top:calc(100% + 10px);left:0;right:0;flex-direction:column;gap:2px;padding:10px;background:rgba(12,14,22,.94);border:1px solid var(--bd);border-radius:20px;backdrop-filter:blur(20px);opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .25s,transform .3s var(--ease),visibility .25s}
@@ -280,7 +282,9 @@ h2{font-size:clamp(32px,4.8vw,60px);line-height:1.05;letter-spacing:-.035em;font
   .nav__list a{padding:15px 16px;font-size:16px}
   .nav__mob{display:block}
   .stats{grid-template-columns:repeat(2,1fr)}
-  .chip{padding:8px 12px 8px 8px}.chip b{font-size:13px}.chip--a{top:4%}.chip--b{top:20%}.chip--c{bottom:26%}.chip--d{bottom:8%}
+  .chip{padding:7px 12px 7px 8px;border-radius:15px}.chip b{font-size:13px}.chip--a,.chip--c{display:none}.chip--b{top:9%;right:-2%}.chip--d{bottom:15%;right:-2%}
+  .contact.wrap{padding-inline:14px}.contact__box{padding:26px 20px;border-radius:28px}
+  .hero__stage{padding-bottom:0}
   .cta .btn{flex:1 1 100%}
   .proj__stats{gap:24px}
   .social__txt{display:none}
